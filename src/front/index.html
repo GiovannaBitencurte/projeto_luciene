@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/pare aqui.jpg" type="image/jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Estacionamento e Lava Jato</title>
+</head>
+<body>
+    <div class="container-login" id="loginScreen">
+        <div class="img-box">
+            <img src="img/login.svg" alt="Ilustração de Login">
+        </div>
+        <div class="content-box">
+            <div class="form-box">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="********" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox"> Lembrar de mim
+                        </label>
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn-submit">Entrar</button>
+                    </div>
+                    <div class="input-group">
+                        <p>Não tem uma conta? <a href="#">Inscrever-se</a></p>
+                    </div>
+                </form>
+                <div class="social-login">
+                    <h3>Logar com</h3>
+                    <ul class="social-icons">
+                        <li><img src="img/facebook.png" alt="Login com Facebook"></li>
+                        <li><img src="img/google.png" alt="Login com Google"></li>
+                        <li><img src="img/apple.png" alt="Login com Apple"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <header class="site-header">
+            <div class="header-branding">
+                <img src="img/pare aqui.jpg" alt="Logo Estacionamento Pare Aqui" class="site-logo">
+                <h1>Estacionamento e Lava Jato</h1>
+            </div>
+            <div class="radio-player">
+                <img src="https://www.cxradio.com.br/img/Radio/Logo/68dd9da9d0a0d00dc07367f4f2bf07a0.jpg" alt="FM Diário 89.9 FM" class="radio-logo">
+                <iframe src="https://onlineradiobox.com/br/899diario/" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </header>
+
+        <section class="hero-banner">
+            <div class="container">
+                <h2>Bem-vindo ao Estacionamento Pare Aqui</h2>
+                <p><strong>Aqui você e seu carro são muito bem-vindos!</strong></p>
+                <a class="btn btn-primary" href="serviços.html" target="_blank">Confira Nossos Serviços!</a>
+
+                <div class="services-list">
+                    <h3>Nossos Serviços Incluem:</h3>
+                    <ul>
+                        <li>Atendimento personalizado</li>
+                        <li>Lava Rápido</li>
+                        <li>Estética Automotiva</li>
+                        <li>Polimento</li>
+                        <li>Cristalização</li>
+                        <li>Higienização</li>
+                        <li>Estacionamento seguro (Avulso, Diário e Mensal)</li>
+                        <li>Lavagem</li>
+                        <li>Troca de Óleo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <h3>Contato</h3>
+                <p>Tel: (17) 4141 - 0208 / (17) 99130 - 1957</p>
+                <h3>Endereço</h3>
+                <a target="_blank" href="https://www.google.com/maps/search/Av.+Bady+Bassitt,+3036+-+Centro,+São+José+do+Rio+Preto+-+SP,+15025-000">
+                    Av. Bady Bassitt, 3036 - Centro, São José do Rio Preto - SP, 15025-000
+                </a>
+                <div class="appointment-button">
+                    <a href="formulario.html" class="btn btn-secondary">Agendamento de Serviço</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <div class="footer-section social-media">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100063980656759" target="_blank" rel="noopener noreferrer"><img src="img/logo facebook.jpg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener noreferrer"><img src="img/instagram logo.png" alt="Instagram"></a>
+                        <a href="https://web.Whatsapp.com/send?phone=55+17996032356" target="_blank" rel="noopener noreferrer"><img src="img/logo whatsapp.jpg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                <div class="footer-section copyright">
+                    <p>&copy; 2023 Estacionamento Pare Aqui. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const loginScreen = document.getElementById('loginScreen');
+            const mainContent = document.getElementById('mainContent');
+            const loginForm = loginScreen.querySelector('form');
+
+            // Oculta o conteúdo principal ao carregar a página
+            mainContent.style.display = 'none';
+
+            // Adiciona um listener para o envio do formulário de login
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Previne o envio padrão do formulário
+
+                // Aqui você adicionaria sua lógica de autenticação real.
+                // Por exemplo, uma chamada AJAX para um backend.
+                // Para este exemplo, vamos simular um login bem-sucedido.
+
+                // Após a autenticação bem-sucedida:
+                loginScreen.style.display = 'none'; // Esconde a tela de login
+                mainContent.style.display = 'block'; // Mostra o conteúdo principal
+                // Você pode adicionar uma transição suave aqui se desejar, via CSS ou JS.
+            });
+        });
+    </script>
+</body>
+</html>

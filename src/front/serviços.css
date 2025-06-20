@@ -1,0 +1,28 @@
+.image-container img {
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 5px;
+  }
+
+  .image-container img {
+    width: 450px;
+    height: auto;
+  }
+
+  .btn-hover {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #666;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn-hover:hover {
+    background-color: #666;
+    color: #f2f2f2;
+  }
+  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Estacionamento</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Agendamento</h1>
+        <form action="https://formsubmit.co/gibitencurte2004@gmail.com" method="post">
+            <!-- Dados do Cliente -->
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf">
+               
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+
+            <!-- Informações do Veículo -->
+            <fieldset>
+                <legend>Informações do Veículo</legend>
+                <label for="placa">Placa do Veículo:</label>
+                <input type="text" id="placa" name="placa" required>
+
+                <label for="modelo">Modelo do Veículo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+
+                <label for="cor">Cor do Veículo:</label>
+                <input type="text" id="cor" name="cor">
+            </fieldset>
+
+            <!-- Tipo de Serviço -->
+            <fieldset>
+                <legend>Tipo de Serviço</legend>
+                <label for="servico">Escolha o serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="lavagem_simples">Lavagem Simples</option>
+                    <option value="lavagem_completa">Lavagem Completa</option>
+                    <option value="estacionamento">Apenas Estacionamento</option>
+                </select>
+            
+                <br><br>
+            
+                <label for="data_servico">Data do Serviço:</label>
+                <input type="datetime-local" id="data_servico" name="data_servico" required>
+            </fieldset>
+
+            <!-- Botões -->
+            <button type="submit"><a href="obrigado.html">Enviar</a></button>
+            <button type="reset">Limpar</button>
+        </form>
+    </div>
+</body>
+</html>
